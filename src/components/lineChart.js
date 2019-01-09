@@ -68,11 +68,11 @@ var LineChart = (function () {
       config.mousePointer = {x: event.x - offsetLeft, y: event.y - offsetTop}
       requestAnimationFrame(drawPointerLocation)
     })
-    topCanvas.addEventListener('mouseout', function (event) {
+    topCanvas.addEventListener('mouseout', function () {
       config.mousePointer = null
       requestAnimationFrame(drawPointerLocation)
     })
-    topCanvas.addEventListener('click', function (event) {
+    topCanvas.addEventListener('click', function () {
       validateMouseClick()
     })
   }
@@ -228,7 +228,6 @@ var LineChart = (function () {
       config.animationFrames = 30
       config.animationStopped = false
       config.animationFrameId = requestAnimationFrame(draw)
-      console.log('Animation Started')
     }
   }
 
@@ -236,7 +235,6 @@ var LineChart = (function () {
     cancelAnimationFrame(config.animationFrameId)
     config.animationStopped = true
     config.animationFrameId = null
-    console.log('Animation Stopped')
   }
 
   function generateData () {

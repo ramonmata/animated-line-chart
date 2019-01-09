@@ -5,11 +5,10 @@
 </template>
 
 <script>
-
 import ChartComponent from './components/ChartComponent'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
     ChartComponent
   }
@@ -22,7 +21,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #35495e;
+  color: #2c3e50;
   margin-top: 60px;
 }
 </style>
