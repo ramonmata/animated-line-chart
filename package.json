@@ -1,21 +1,22 @@
 {
   "name": "vue-canvas-play",
   "version": "1.1.0",
+  "private": true,
   "description": "Canvas Drawing Play",
   "author": "Ramon Mata <ramon@mata.com.mx>",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "core-js": "^3.6.4",
     "vue": "^2.6.10"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-plugin-babel": "~4.2.3",
+    "@vue/cli-plugin-eslint": "~4.2.3",
+    "@vue/cli-service": "~4.2.3",
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.3",
